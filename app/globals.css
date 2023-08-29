@@ -30,3 +30,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.hover-glow:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
