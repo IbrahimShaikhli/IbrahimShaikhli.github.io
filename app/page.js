@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <div>
       <head>
-        <title>Ibrahim Khalid</title>
+        <title >Ibrahim Khalid</title>
       </head>
 
       <main className='bg-black text-white px-10'>
         <nav className='py-10 mb-12 flex justify-between sticky top-0'>
-          <h1 className='text-3xl font-semibold'>Ibrahim</h1>
+          <h1  className='text-3xl font-semibold'>Ibrahim</h1>
           <ul className='flex items-center space-x-6'>
             <li>
               <a className='cursor-pointer text-xl hover:text-teal-300 hover-glow' href='#about'>
@@ -44,14 +44,7 @@ export default function Home() {
               My journey into coding led me to Flutter, where creativity meets technology.
             </p>
           </div>
-          <div className='text-4xl flex justify-center gap-6 py-3 text-gray-300 transform hover:scale-110 transition-transform'>
-            <a href='https://www.linkedin.com/in/ibrahim-khalid-8b5692176/' target='_blank' rel='noopener noreferrer'>
-              <AiFillLinkedin className='hover:text-teal-300' />
-            </a>
-            <a href='https://github.com/IbrahimShaikhli/' target='_blank' rel='noopener noreferrer'>
-              <AiFillGithub className='hover:text-teal-300' />
-            </a>
-          </div>
+
 
           <div className='relative mx-auto bg-gradient-to-b from-teal-300 rounded-full w-80 h-80 mt-20 overflow-hidden'>
             <Image
@@ -70,30 +63,38 @@ export default function Home() {
             <p className='text-lg py-2 leading-7'>
               Projects.
             </p>
-            {/* Add project details here */}
-            <div className="flex flex-wrap justify-between"> {/* Add this line */}
+
+            <div className="flex flex-wrap justify-between">
               <ProjectCard
                 title="Project 1"
                 description="This is the description for Project 1. Replace it with your actual project details."
                 thumbnailSrc="/web1.png" // Replace with actual image path
+                githubLink={"https://github.com/Marton-Zeisler/Voluny"}
               />
               <ProjectCard
                 title="Project 2"
                 description="This is the description for Project 2. Replace it with your actual project details."
                 thumbnailSrc="/web3.png" // Replace with actual image path
               />
-            </div> {/* And this line */}
+            </div>
           </div>
         </section>
-
 
 
         <section id='contact' className='bg-gray-900 py-20'>
           <div className='text-center max-w-3xl mx-auto'>
             <h3 className='text-3xl py-1 font-semibold'>Contact</h3>
             <p className='text-lg py-2 leading-7'>
-              Provide your contact information or a contact form here.
+              Feel free to reach out for any inquries.
             </p>
+          </div>
+          <div className='text-4xl flex justify-center gap-6 py-3 text-gray-300 transform hover:scale-110 transition-transform'>
+            <a href='https://www.linkedin.com/in/ibrahim-khalid-8b5692176/' target='_blank' rel='noopener noreferrer'>
+              <AiFillLinkedin className='hover:text-teal-300' />
+            </a>
+            <a href='https://github.com/IbrahimShaikhli/' target='_blank' rel='noopener noreferrer'>
+              <AiFillGithub className='hover:text-teal-300' />
+            </a>
           </div>
         </section>
 
