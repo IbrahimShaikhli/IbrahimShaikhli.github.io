@@ -67,7 +67,7 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink }) => {
             rel="noopener noreferrer"
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
           >
-            <AiFillGithub className='hover:text-teal-300' size={24} />
+            <AiFillGithub className='hover:text-teal-300' size={30} />
           </a>
         </div>
       </Tilt>

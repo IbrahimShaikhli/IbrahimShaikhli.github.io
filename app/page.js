@@ -1,6 +1,8 @@
 "use client";
 
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub, } from 'react-icons/ai';
+import { FaFilePdf } from 'react-icons/fa';
+
 import Image from 'next/image';
 import ProjectCard from './projectCard';
 
@@ -13,7 +15,7 @@ export default function Home() {
 
       <main className='bg-black text-white px-10'>
         <nav className='py-10 mb-12 flex justify-between sticky top-0'>
-          <h1  className='text-3xl font-semibold'>Ibrahim</h1>
+          <h1 className='text-3xl font-semibold'>Ibrahim</h1>
           <ul className='flex items-center space-x-6'>
             <li>
               <a className='cursor-pointer text-xl hover:text-teal-300 hover-glow' href='#about'>
@@ -33,15 +35,12 @@ export default function Home() {
           </ul>
         </nav>
 
-        <section id='about' className='min-h-screen py-20 bg-gradient-to-b from-gray-800 to-black text-white'>
+        <section id='about' className='min-h-screen py-20 bg-gradient-to-b from-gray-800 to-black text-white back'>
           <div className='text-center max-w-3xl mx-auto'>
             <h2 className='text-5xl py-2 text-teal-300 font-semibold'>Ibrahim AlShaikhli</h2>
             <h3 className='text-2xl py-2'>Software Engineer and Flutter Developer</h3>
             <p className='text-lg py-5 leading-7'>
-              Hey there, I'm Ibrahim, a software engineer who's found a unique blend of passions.
-              By day, I'm immersed in Flutter development, crafting mobile apps that bridge imagination and functionality.
-              When I'm not coding, you'll catch me at the gym, pursuing strength and balance.
-              My journey into coding led me to Flutter, where creativity meets technology.
+              السلام عليكم and hey there! I'm Ibrahim, a software engineer with a captivating blend of passions. By day, I'm immersed in Flutter development, crafting mobile apps that elegantly combine imagination and functionality. When I'm not coding, you'll find me at the gym!
             </p>
           </div>
 
@@ -85,7 +84,7 @@ export default function Home() {
           <div className='text-center max-w-3xl mx-auto'>
             <h3 className='text-3xl py-1 font-semibold'>Contact</h3>
             <p className='text-lg py-2 leading-7'>
-              Feel free to reach out for any inquries.
+              Feel free to reach out for any inquiries.
             </p>
           </div>
           <div className='text-4xl flex justify-center gap-6 py-3 text-gray-300 transform hover:scale-110 transition-transform'>
@@ -95,8 +94,15 @@ export default function Home() {
             <a href='https://github.com/IbrahimShaikhli/' target='_blank' rel='noopener noreferrer'>
               <AiFillGithub className='hover:text-teal-300' />
             </a>
+            <a href='/resume.pdf' download>
+              <div className='flex flex-col items-center'>
+                <FaFilePdf className='hover:text-teal-300' />
+                <span className='text-sm mt-1'>My Resume</span>
+              </div>
+            </a>
           </div>
         </section>
+
 
       </main>
     </div>
