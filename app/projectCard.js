@@ -4,15 +4,20 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 
-const ProjectCard = ({ title, description, thumbnailSrc, githubLink }) => {
+const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   useEffect(() => {
+    console.log(`Card ${index} inView: ${inView}`);
+
     if (inView) {
-      // Start animation or any other actions when the component is in view
+      const delay = 0.5 * index;
+      setTimeout(() => {
+        // Start animation or other actions when the component is in view
+      }, delay * 1000);
     }
   }, [inView]);
 
@@ -26,7 +31,7 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink }) => {
       opacity: 1,
       transition: {
         type: "tween",
-        delay: 0.2,
+        delay: 0.3 * index,
         duration: 0.5,
         ease: "easeOut",
       },
@@ -39,7 +44,8 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink }) => {
       initial="hidden"
       animate={inView ? "show" : "hidden"}
       variants={fadeIn}
-      className="bg-teal-50 rounded-lg shadow-md p-4 mb-8 relative"
+      className="bg-gray-800 rounded-lg shadow-md p-3 mb-3 relative"
+      style={{ maxWidth: '300px' }} // Set a maximum width for the card
     >
       <Tilt
         options={{
@@ -50,24 +56,25 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink }) => {
           perspective: 1000,
         }}
       >
-        <div>
+        <div className="image-container">
           <img
             src={thumbnailSrc}
             alt="Project Thumbnail"
-            className="w-full h-auto mb-4"
+            className="w-80 h-auto"
+        
           />
-          <h3 className="text-lg font-semibold mb-2 text-gray-600">{title}</h3>
-          <p className="text-gray-600 mb-4">{description}</p>
-          <a href="#" className="text-teal-500 hover:underline">
+          <h3 className="text-lg font-semibold mb-1 text-gray-200">{title}</h3>
+          <p className="text-gray-200 ">{description}</p>
+          {/* <a href="#" className="text-purple-500 hover:underline">
             View Details
-          </a>
+          </a> */}
           <a
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
           >
-            <AiFillGithub className='hover:text-teal-300' size={30} />
+            <AiFillGithub className='hover:text-purple-600' size={30} />
           </a>
         </div>
       </Tilt>

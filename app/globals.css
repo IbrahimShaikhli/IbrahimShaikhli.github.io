@@ -21,19 +21,20 @@
   src: url('../public/Burtons.otf');
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 .hover-glow:hover {
   text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
+
+.icon-linkedin:hover,
+.icon-github:hover,
+.icon-resume:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
