@@ -13,36 +13,30 @@ export default function Home() {
       title: "Souq Artisan",
       description: "I developed a mobile application called Souq Artisan. This platform is designed to support local artisans by providing them with a space to sell their handcrafted products.",
       thumbnailSrc: "/demo.png",
-      githubLink: "https://github.com/Marton-Zeisler/Voluny",
+      githubLink: "https://github.com/IbrahimShaikhli/Souq-Artisan",
     },
     {
 
       title: "Coming soon",
-      description: "This is the description for Project 1...",
+      description: "This is the description for Project 2...",
       thumbnailSrc: "/comingsoon.png",
       githubLink: "https://github.com/Marton-Zeisler/Voluny",
     },
     {
 
       title: "Coming soon",
-      description: "This is the description for Project 1...",
+      description: "This is the description for Project 3...",
       thumbnailSrc: "/comingsoon.png",
       githubLink: "https://github.com/Marton-Zeisler/Voluny",
     },
-    {
 
-      title: "Coming soon",
-      description: "This is the description for Project 1...",
-      thumbnailSrc: "/comingsoon.png",
-      githubLink: "https://github.com/Marton-Zeisler/Voluny",
-    },
-    // Add more projects as needed
   ];
 
   return (
     <div>
       <head>
         <title>Ibrahim Khalid</title>
+        <link rel="icon" href="/i-logo.png" />
       </head>
 
       <main className="bg-black text-white px-10">
@@ -104,13 +98,13 @@ export default function Home() {
         </section>
 
         <section id="projects" className="py-20">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <h3 className="text-3xl py-1 font-semibold">My Work</h3>
             <p className="text-lg py-2 leading-7">
               Projects.
             </p>
 
-            <div className="flex flex-wrap justify-between flex-wrap-container">
+            <div className="flex flex-wrap justify-start gap-4">
               {projectData.map((project, index) => (
                 <ProjectCard className="project-card"
                   key={index}
