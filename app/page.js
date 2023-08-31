@@ -138,7 +138,7 @@ export default function Home() {
             <a
               href="/resume.pdf"
               download
-              className="inline-block bg-gray-200 border border-gray-300 rounded-md py-0.5 px-1.5 flex items-center text-sm text-gray-600 hover:bg-purple-100 hover:border-purple-300 hover:text-purple-500"
+              className=" bg-gray-200 border border-gray-300 rounded-md py-0.5 px-1.5 flex items-center text-sm text-gray-600 hover:bg-purple-100 hover:border-purple-300 hover:text-purple-500"
             >
               <span className="mr-1">My Resume</span>
               <FaFileDownload size={16} />
