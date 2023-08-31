@@ -1,8 +1,9 @@
-import { motion } from 'framer-motion';
-import { Tilt } from 'react-tilt';
-import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
-import { AiFillGithub } from 'react-icons/ai';
+import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { AiFillGithub } from "react-icons/ai";
+import Image from "next/image";
 
 const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) => {
   const [ref, inView] = useInView({
@@ -11,7 +12,6 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) =>
   });
 
   useEffect(() => {
-
     if (inView) {
       const delay = 0.5 * index;
       setTimeout(() => {
@@ -43,8 +43,8 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) =>
       initial="hidden"
       animate={inView ? "show" : "hidden"}
       variants={fadeIn}
-      className="bg-gray-800 rounded-lg shadow-md p-3  mx-2  mb-3 relative"
-      style={{ maxWidth: '300px' }} // Set a maximum width for the card
+      className="bg-gray-800 rounded-lg shadow-md p-3 mx-2 mb-3 relative"
+      style={{ maxWidth: "300px" }} // Set a maximum width for the card
     >
       <Tilt
         options={{
@@ -56,23 +56,22 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) =>
         }}
       >
         <div className="image-container">
-          <img
+          <Image
             src={thumbnailSrc}
             alt="Project Thumbnail"
-            className="w-80 h-auto"
-        
+            width={300} // Set the appropriate width
+            height={200} // Set the appropriate height
           />
           <h3 className="text-lg font-semibold mb-1 text-gray-200">{title}</h3>
           <p className="text-gray-200 ">{description}</p>
-          
+
           <a
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
           >
-           <AiFillGithub className="hover:text-purple-600 hover-glow" size={30} />
-
+            <AiFillGithub className="hover:text-purple-600 hover-glow" size={30} />
           </a>
         </div>
       </Tilt>

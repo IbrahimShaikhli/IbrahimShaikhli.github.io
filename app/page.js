@@ -1,10 +1,10 @@
 "use client";
 
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import { FaFileDownload } from 'react-icons/fa';
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { FaFileDownload } from "react-icons/fa";
 
-import Image from 'next/image';
-import ProjectCard from './projectCard';
+import Image from "next/image";
+import ProjectCard from "./projectCard";
 
 export default function Home() {
 
@@ -67,16 +67,16 @@ export default function Home() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: 'url("/background-image.png")',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+              backgroundImage: "url('/background-image.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           />
 
           <div
             className="absolute inset-0 z-0 bg-gradient-to-b from-purple-500 to-transparent"
             style={{
-              mixBlendMode: 'multiply',
+              mixBlendMode: "multiply",
             }}
           />
 
