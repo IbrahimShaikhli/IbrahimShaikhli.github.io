@@ -11,7 +11,6 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) =>
   });
 
   useEffect(() => {
-    console.log(`Card ${index} inView: ${inView}`);
 
     if (inView) {
       const delay = 0.5 * index;
@@ -19,7 +18,7 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) =>
         // Start animation or other actions when the component is in view
       }, delay * 1000);
     }
-  }, [inView]);
+  }, [inView, index]);
 
   const fadeIn = {
     hidden: {
@@ -72,7 +71,8 @@ const ProjectCard = ({ title, description, thumbnailSrc, githubLink, index }) =>
             rel="noopener noreferrer"
             className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
           >
-            <AiFillGithub className='hover:text-purple-600 hover-glow' size={30} />
+           <AiFillGithub className="hover:text-purple-600 hover-glow" size={30} />
+
           </a>
         </div>
       </Tilt>

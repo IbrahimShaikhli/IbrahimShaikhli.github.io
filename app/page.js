@@ -100,9 +100,10 @@ export default function Home() {
         <section id="projects" className="py-20">
           <div className="max-w-5xl mx-auto">
             <h3 className="text-3xl py-1 font-semibold">My Work</h3>
-            <p className="text-lg py-2 leading-7">
+            <h3 className="text-lg py-2 leading-7">
               Projects.
-            </p>
+            </h3>
+
 
             <div className="flex flex-wrap justify-start gap-4">
               {projectData.map((project, index) => (
