@@ -92,7 +92,7 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-purple-300 font-semibold">Ibrahim AlShaikhli</h2>
             <h3 className="text-2xl py-2">Software Engineer and Flutter Developer</h3>
             <p className="text-lg py-5 leading-7">
-            السلام عليكم and hey there! I&apos;m Ibrahim, a software engineer with a captivating blend of passions. By day, I&apos;m immersed in Flutter development, crafting mobile apps that elegantly combine imagination and functionality. When I&apos;m not coding, you&apos;ll find me at the gym!
+              Hey there! I&apos;m Ibrahim, a software engineer with a captivating blend of passions. By day, I&apos;m immersed in Flutter development, crafting mobile apps that elegantly combine imagination and functionality. When I&apos;m not coding, you&apos;ll find me at the gym!
 
             </p>
           </div>
