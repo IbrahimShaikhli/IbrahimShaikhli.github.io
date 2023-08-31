@@ -20,14 +20,14 @@ export default function Home() {
       title: "Coming soon",
       description: "This is the description for Project 2...",
       thumbnailSrc: "/comingsoon.png",
-      githubLink: "https://github.com/Marton-Zeisler/Voluny",
+      githubLink: "",
     },
     {
 
       title: "Coming soon",
       description: "This is the description for Project 3...",
       thumbnailSrc: "/comingsoon.png",
-      githubLink: "https://github.com/Marton-Zeisler/Voluny",
+      githubLink: "",
     },
 
   ];
