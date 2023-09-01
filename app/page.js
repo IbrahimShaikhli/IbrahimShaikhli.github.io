@@ -137,7 +137,7 @@ export default function Home() {
               <AiFillGithub className="hover:text-purple-300" />
             </a>
             <a
-              href="/resume.pdf"
+              href="/cv.pdf"
               download
               className=" bg-gray-200 border border-gray-300 rounded-md py-0.5 px-1.5 flex items-center text-sm text-gray-600 hover:bg-purple-100 hover:border-purple-300 hover:text-purple-500"
             >
