@@ -18,8 +18,8 @@ export default function Home() {
 
       title: "Property Pulse",
       description: "Real estate mobile application that allows users to search for properties and view their details. Users can also save properties to their favorites and view them later.",
-      thumbnailSrc: "/propertypulsesoon.png",
-      githubLink: "",
+      thumbnailSrc: "/propertypulsework.jpg",
+      githubLink: "https://github.com/IbrahimShaikhli/propertypulse",
     },
     {
 
