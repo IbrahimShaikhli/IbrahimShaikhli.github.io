@@ -24,7 +24,7 @@ export default function Home() {
     {
 
       title: "Coming soon",
-      description: "This is the description for Project 3...",
+      description: "Coming soon",
       thumbnailSrc: "/comingsoon.png",
       githubLink: "",
     },
