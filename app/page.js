@@ -1,4 +1,5 @@
 "use client";
+
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaFileDownload } from "react-icons/fa";
 import Image from "next/image";
